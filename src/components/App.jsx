@@ -1,16 +1,18 @@
-export const App = () => {
+import React from 'react';
+import FriendList from './FriendList/FriendList.js';
+import Profile from './Profile/Profile.js';
+import Statistics from './Statistics/Statistics.js';
+import TransactionHistory from './TransactionHistory/TransactionHistory.js';
+
+const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
+    <div>
+      <Profile />
+      <Statistics />
+      <FriendList />
+      <TransactionHistory />
     </div>
   );
 };
+
+export default App;
