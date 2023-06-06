@@ -1,18 +1,17 @@
 import React from 'react';
-import FriendList from './FriendList/FriendList.js';
-import Profile from './Profile/Profile.js';
-import Statistics from './Statistics/Statistics.js';
-import TransactionHistory from './TransactionHistory/TransactionHistory.js';
+import Profile from './Profile/Profile';
+import user from './user.json';
 
-const App = () => {
-  return (
-    <div>
-      <Profile />
-      <Statistics />
-      <FriendList />
-      <TransactionHistory />
-    </div>
-  );
-};
+const App = () => (
+  <div>
+    <Profile
+      username={user.username}
+      tag={user.tag}
+      location={user.location}
+      avatar={user.avatar}
+      stats={user.stats}
+    />
+  </div>
+);
 
 export default App;
