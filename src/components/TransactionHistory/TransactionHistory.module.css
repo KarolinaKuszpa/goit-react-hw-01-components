@@ -1,0 +1,29 @@
+.transactionHistory {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.transactionHistory th {
+  background-color: #f5f5f5;
+  padding: 10px;
+  text-align: left;
+}
+
+.transactionHistory td {
+  padding: 10px;
+  text-align: left;
+}
+
+.transactionHistory .titleRow td {
+  font-weight: bold;
+}
+
+.transactionHistory .dataRow td {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.transactionHistory .dataRow td span {
+  margin-right: 10px;
+}
