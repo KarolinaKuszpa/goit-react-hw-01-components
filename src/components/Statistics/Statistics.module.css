@@ -27,6 +27,14 @@
   margin-bottom: 10px;
 }
 
-.item:nth-child(even) {
-  background-color: #f1f1f1;
+.item:nth-child(1) {
+  background-color: lightgreen;
+}
+
+.item:nth-child(2) {
+  background-color: lightpink;
+}
+
+.item:nth-child(3) {
+  background-color: lightyellow;
 }
